@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**About**
 
-## Getting Started
+Contuso ecommerce is a fullstack web application that lets users view specific products, view all of its details, add product to cart, and checkout. The technologies used for this application are Next.js, Sanity, and Stripe.
 
-First, run the development server:
+Deployed version can be found here: https://contuso-ecommerce.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**How to Run**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+After forking and cloning the repo, use npm to install dependencies and to run the server.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+npm install
 
-## Learn More
+npm run react-dev
 
-To learn more about Next.js, take a look at the following resources:
+Create a .env file in the root directory and add public sanity token, stripe publishable key, and stripe secret key.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_SANITY_TOKEN= ""
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY= ""
 
-## Deploy on Vercel
+NEXT_PUBLIC_STRIPE_SECRET_KEY= ""
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Features**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Home page that is responsive and dynamic. Everything from the hero image/description, to products, footer image/title can be modified in seconds using sanity.
+
+![image](https://user-images.githubusercontent.com/16688207/192125733-c228686a-4923-42be-904b-d632a901a8e7.png)
+
+Product page that displays each product details and images using next.js dynamic routing. From here you can add to cart or buy now as well as navigate to other products. Products can easily be added or modified using Sanity.
+
+![c247ce40aca0e8bac9616b2c90edb0a4](https://user-images.githubusercontent.com/16688207/192126267-fea889ef-3a3d-4807-abf7-7714ac4551ee.gif)
+
+Cart where you can modify items you want and checkout 
+
+![771592a9a35647be699e67bc9d25c472](https://user-images.githubusercontent.com/16688207/192126046-6c3cd048-3422-4dbb-bda4-f2c422bfe0d7.gif)
+
+Stripe Payment system allowing for secure and easy payment
+
+![image](https://user-images.githubusercontent.com/16688207/192125988-20cb8646-dda6-4a4f-8992-13aef44ea890.png)
